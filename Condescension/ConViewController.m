@@ -30,11 +30,16 @@
 	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 	if (!self) return nil;
 	
-	_motionSensor = [[CNMotionSensor alloc] init];
-	_motionSensor.delegate = self;
-	
 	return self;
 }
+
+- (void)viewDidLoad;
+{
+	[super viewDidLoad];
+	_motionSensor = [[CNMotionSensor alloc] init];
+	_motionSensor.delegate = self;
+}
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

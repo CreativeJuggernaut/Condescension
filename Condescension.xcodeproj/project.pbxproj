@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		49ADE41415BB7D92008E8001 /* CNMotionSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = 49ADE41315BB7D92008E8001 /* CNMotionSensor.m */; };
 		49ADE41715BB7DB2008E8001 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49ADE41615BB7DB2008E8001 /* CoreMotion.framework */; };
+		49ADE41915BC85C8008E8001 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49ADE41815BC85C8008E8001 /* QuartzCore.framework */; };
 		C72DA11D15BB312700357D6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72DA11C15BB312700357D6F /* UIKit.framework */; };
 		C72DA11F15BB312700357D6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72DA11E15BB312700357D6F /* Foundation.framework */; };
 		C72DA12115BB312700357D6F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72DA12015BB312700357D6F /* CoreGraphics.framework */; };
@@ -23,6 +24,7 @@
 		49ADE41215BB7D92008E8001 /* CNMotionSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNMotionSensor.h; sourceTree = "<group>"; };
 		49ADE41315BB7D92008E8001 /* CNMotionSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNMotionSensor.m; sourceTree = "<group>"; };
 		49ADE41615BB7DB2008E8001 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		49ADE41815BC85C8008E8001 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C72DA11815BB312700357D6F /* Condescension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Condescension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C72DA11C15BB312700357D6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C72DA11E15BB312700357D6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49ADE41915BC85C8008E8001 /* QuartzCore.framework in Frameworks */,
 				49ADE41715BB7DB2008E8001 /* CoreMotion.framework in Frameworks */,
 				C72DA11D15BB312700357D6F /* UIKit.framework in Frameworks */,
 				C72DA11F15BB312700357D6F /* Foundation.framework in Frameworks */,
@@ -73,6 +76,7 @@
 		C72DA11B15BB312700357D6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49ADE41815BC85C8008E8001 /* QuartzCore.framework */,
 				49ADE41615BB7DB2008E8001 /* CoreMotion.framework */,
 				C72DA11C15BB312700357D6F /* UIKit.framework */,
 				C72DA11E15BB312700357D6F /* Foundation.framework */,
