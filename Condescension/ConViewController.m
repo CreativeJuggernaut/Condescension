@@ -10,7 +10,9 @@
 
 #import "CNMotionSensor.h"
 
-@interface ConViewController () <CNMotionSensorDelegate>
+#import <AVFoundation/AVFoundation.h>
+
+@interface ConViewController () <CNMotionSensorDelegate, AVAudioPlayerDelegate>
 
 @end
 
@@ -23,6 +25,7 @@
 	NSArray *_soundFiles;
 	
 	CNMotionSensor *_motionSensor;
+	AVAudioPlayer *_audioPlayer;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
@@ -48,7 +51,22 @@
 
 - (void)shakeEvent:(CNMotionSensor *)sensor;
 {
-	NSLog(@"Controller recieved shake event");
+
+	
+	NSLog(@"Controller recieved shake event %@", _audioPlayer ? @"already playing" : @"not playing");
+
+	NSURL *url = [[NSBundle mainBundle] URLForResource:@"UhHuhTest1" withExtension:@"m4a"];
+	
+	if (!_audioPlayer) {
+		_audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+		_audioPlayer.delegate = self;
+		[_audioPlayer play];
+	}
+}
+
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag;
+{
+	_audioPlayer = nil;
 }
 
 @end

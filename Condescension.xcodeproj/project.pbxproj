@@ -10,6 +10,8 @@
 		49ADE41415BB7D92008E8001 /* CNMotionSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = 49ADE41315BB7D92008E8001 /* CNMotionSensor.m */; };
 		49ADE41715BB7DB2008E8001 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49ADE41615BB7DB2008E8001 /* CoreMotion.framework */; };
 		49ADE41915BC85C8008E8001 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49ADE41815BC85C8008E8001 /* QuartzCore.framework */; };
+		49ADE41C15BC873A008E8001 /* UhHuhTest1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 49ADE41B15BC873A008E8001 /* UhHuhTest1.m4a */; };
+		49ADE41E15BC87B6008E8001 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49ADE41D15BC87B6008E8001 /* AVFoundation.framework */; };
 		C72DA11D15BB312700357D6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72DA11C15BB312700357D6F /* UIKit.framework */; };
 		C72DA11F15BB312700357D6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72DA11E15BB312700357D6F /* Foundation.framework */; };
 		C72DA12115BB312700357D6F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72DA12015BB312700357D6F /* CoreGraphics.framework */; };
@@ -25,6 +27,8 @@
 		49ADE41315BB7D92008E8001 /* CNMotionSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNMotionSensor.m; sourceTree = "<group>"; };
 		49ADE41615BB7DB2008E8001 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		49ADE41815BC85C8008E8001 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		49ADE41B15BC873A008E8001 /* UhHuhTest1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = UhHuhTest1.m4a; sourceTree = "<group>"; };
+		49ADE41D15BC87B6008E8001 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C72DA11815BB312700357D6F /* Condescension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Condescension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C72DA11C15BB312700357D6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C72DA11E15BB312700357D6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49ADE41E15BC87B6008E8001 /* AVFoundation.framework in Frameworks */,
 				49ADE41915BC85C8008E8001 /* QuartzCore.framework in Frameworks */,
 				49ADE41715BB7DB2008E8001 /* CoreMotion.framework in Frameworks */,
 				C72DA11D15BB312700357D6F /* UIKit.framework in Frameworks */,
@@ -56,10 +61,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49ADE41A15BC873A008E8001 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				49ADE41B15BC873A008E8001 /* UhHuhTest1.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		C72DA10D15BB312700357D6F = {
 			isa = PBXGroup;
 			children = (
 				C72DA12215BB312700357D6F /* Condescension */,
+				49ADE41A15BC873A008E8001 /* Sounds */,
 				C72DA11B15BB312700357D6F /* Frameworks */,
 				C72DA11915BB312700357D6F /* Products */,
 			);
@@ -76,6 +90,7 @@
 		C72DA11B15BB312700357D6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49ADE41D15BC87B6008E8001 /* AVFoundation.framework */,
 				49ADE41815BC85C8008E8001 /* QuartzCore.framework */,
 				49ADE41615BB7DB2008E8001 /* CoreMotion.framework */,
 				C72DA11C15BB312700357D6F /* UIKit.framework */,
@@ -165,6 +180,7 @@
 			files = (
 				C72DA12715BB312700357D6F /* InfoPlist.strings in Resources */,
 				C72DA13015BB312700357D6F /* MainStoryboard.storyboard in Resources */,
+				49ADE41C15BC873A008E8001 /* UhHuhTest1.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
